@@ -1,0 +1,27 @@
+{
+  "name": "takasaki-tours",
+  "version": "0.1.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "private": "true",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "generate": "turbo run generate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "npm": "Use pnpm please!",
+    "yarn": "Use pnpm please!",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.12.2",
+  "devDependencies": {
+    "turbo": "^2.3.3"
+  },
+  "dependencies": {
+    "@biomejs/biome": "^1.9.4"
+  }
+}
