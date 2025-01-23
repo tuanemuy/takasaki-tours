@@ -1,27 +1,64 @@
 {
   "name": "takasaki-tours",
   "version": "0.1.0",
-  "description": "",
-  "keywords": [],
-  "author": "",
-  "license": "UNLICENSED",
-  "private": "true",
+  "private": true,
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "generate": "turbo run generate",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "engines": {
-    "npm": "Use pnpm please!",
-    "yarn": "Use pnpm please!",
-    "pnpm": ">=9.0.0"
-  },
-  "packageManager": "pnpm@9.12.2",
-  "devDependencies": {
-    "turbo": "^2.3.3"
+    "prepare": "panda codegen",
+    "dev": "next dev --turbopack",
+    "build": "pnpm run migrate:prod && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "migrate:dev": "drizzle-kit generate && drizzle-kit migrate",
+    "migrate:prod": "drizzle-kit migrate",
+    "studio": "drizzle-kit studio"
   },
   "dependencies": {
-    "@biomejs/biome": "^1.9.4"
+    "@ark-ui/react": "^4.4.4",
+    "@auth/core": "^0.37.4",
+    "@auth/drizzle-adapter": "^1.7.4",
+    "@formatjs/intl-localematcher": "^0.5.10",
+    "@google-cloud/storage": "^7.14.0",
+    "@libsql/client": "^0.14.0",
+    "@monaco-editor/react": "4.7.0-rc.0",
+    "@paralleldrive/cuid2": "^2.2.2",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.38.0",
+    "drizzle-zod": "^0.6.0",
+    "heic2any": "^0.0.4",
+    "lucide-react": "^0.468.0",
+    "mime": "^4.0.4",
+    "monaco-editor": "^0.52.2",
+    "negotiator": "^1.0.0",
+    "next": "15.1.6",
+    "next-auth": "5.0.0-beta.25",
+    "nodemailer": "^6.9.16",
+    "parse-nested-form-data": "^1.0.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "sharp": "^0.33.5",
+    "vim-monaco": "^1.0.6",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0",
+    "xss": "^1.0.15",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@pandacss/dev": "^0.49.0",
+    "@park-ui/panda-preset": "^0.43.1",
+    "@types/grecaptcha": "^3.0.9",
+    "@types/negotiator": "^0.6.3",
+    "@types/node": "^20",
+    "@types/nodemailer": "^6.4.17",
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.2",
+    "drizzle-kit": "^0.30.2",
+    "typescript": "^5"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "19.0.1",
+      "@types/react-dom": "19.0.2"
+    }
   }
 }

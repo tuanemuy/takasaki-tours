@@ -1,0 +1,11 @@
+.card__body:has(table) {
+  overflow-x: scroll;
+}
+
+.pagination__item,
+.pagination__prevTrigger,
+.pagination__nextTrigger {
+  height: 32px;
+  min-width: 32px;
+  padding-inline: 4px;
+}

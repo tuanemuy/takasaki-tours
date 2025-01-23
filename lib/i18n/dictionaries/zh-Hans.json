@@ -1,0 +1,181 @@
+{
+  "general": {
+    "colon": "：",
+    "more": "了解更多",
+    "buttons": {
+      "add": "创建",
+      "save": "保存",
+      "edit": "编辑",
+      "submit": "提交",
+      "cancel": "取消"
+    },
+    "messages": {
+      "failedToSend": "发送失败",
+      "tryAgain": "请重试",
+      "invalidValue": "请输入有效值"
+    },
+    "errors": {
+      "validation-error": "输入值有误",
+      "parsing-error": "无法处理输入值",
+      "not-found-error": "未找到数据",
+      "database-error": "数据库出错",
+      "unique-constraint-error": "该值已被使用",
+      "auth-error": "认证出错",
+      "unauthorized-error": "无权限",
+      "recaptcha-error": "无效请求",
+      "storage-error": "存储出错",
+      "sharp-error": "图片处理出错",
+      "image-conversion-error": "图片转换出错",
+      "mailer-error": "邮件发送失败"
+    }
+  },
+  "pages": {
+    "public": {
+      "layout": {
+        "links": [
+          {
+            "name": "首页",
+            "href": "/"
+          },
+          {
+            "name": "寻找旅游",
+            "href": "/tour"
+          },
+          {
+            "name": "隐私政策",
+            "href": "/privacy-policy"
+          }
+        ],
+        "copyright": "© 柳川村役场"
+      },
+      "index": {
+        "meta": {
+          "title": "群马县高崎市旅游景点・旅游路线 | TAKASAKI TOURS",
+          "description": "群马县高崎市自古以来就是交通要地，吸引了来自各地的众多游客。在本网站上，您可以找到探索这里历史和文化的旅游路线。请从不同角度欣赏魅力四射的高崎市。"
+        },
+        "h1": "群马县高崎市旅游景点・旅游路线 | TAKASAKI TOURS",
+        "title": "欢迎来到群马县高崎市",
+        "overview": "群马县高崎市自古以来就是交通要地，吸引了来自各地的众多游客。在本网站上，您可以找到探索这里历史和文化的旅游路线。请从不同角度欣赏魅力四射的高崎市。",
+        "sections": {
+          "tours": {
+            "name": "寻找旅游",
+            "more": "所有旅游"
+          }
+        }
+      },
+      "privacyPolicy": {
+        "meta": {
+          "title": "隐私政策 | TAKASAKI TOURS",
+          "description": "TAKASAKI TOURS的隐私政策。"
+        },
+        "h1": "隐私政策"
+      },
+      "tour": {
+        "list": {
+          "meta": {
+            "title": "寻找群马县高崎市的旅游路线 | TAKASAKI TOURS",
+            "description": "旅游路线列表页面。寻找探索群马县高崎市历史和文化的旅游路线。"
+          },
+          "h1": "寻找旅游"
+        },
+        "details": {
+          "sections": {
+            "header": {
+              "headings": {
+                "duration": "所需时间",
+                "price": "价格"
+              }
+            },
+            "locations": {
+              "name": "游览地点",
+              "more": "了解更多"
+            },
+            "information": {
+              "name": "旅游信息",
+              "headings": {
+                "price": "价格",
+                "duration": "所需时间",
+                "meetingTime": "集合时间",
+                "meetingPoint": "集合地点",
+                "parking": "停车场",
+                "clothing": "着装",
+                "minParticipants": "最少人数",
+                "maxParticipants": "最大人数",
+                "languages": "可用语言",
+                "ageRestrictions": "年龄限制"
+              },
+              "units": {
+                "participants": "人"
+              }
+            },
+            "services": {
+              "name": "费用包含"
+            },
+            "schedules": {
+              "name": "行程安排"
+            },
+            "cancel": {
+              "name": "取消政策"
+            },
+            "application": {
+              "name": "申请",
+              "note": "* 此表格不确认您的预订。我们的工作人员将在审核您的申请后与您联系。",
+              "requiredInformation": "必填信息",
+              "inputs": {
+                "date": {
+                  "name": "首选日期"
+                },
+                "participants": {
+                  "name": "参加人数"
+                },
+                "representative": {
+                  "name": "代表姓名"
+                },
+                "participantsDetails": {
+                  "name": "参加者",
+                  "placeholder": "示例：\nTaylor Brooks（年龄：28岁，过敏：小麦，饮酒：是）\n柳川 秀雄（年龄：35岁，过敏：小麦，饮酒：是）",
+                  "note": "请输入所有参加者的必填信息。"
+                },
+                "email": {
+                  "name": "电子邮箱"
+                },
+                "tel": {
+                  "name": "电话号码"
+                },
+                "remarks": {
+                  "name": "其他备注"
+                }
+              },
+              "submit": "申请",
+              "confirmation": {
+                "title": "您确定要申请此旅游吗？",
+                "description": "此申请表不确认您的预订。<br/>我们的工作人员将在审核您的申请后与您联系。",
+                "confirm": "申请"
+              }
+            },
+            "contact": {
+              "name": "联系我们"
+            }
+          }
+        },
+        "thanks": {
+          "title": "感谢您的申请",
+          "message": "我们已收到您的旅游申请。<br/>我们的工作人员将在审核您的申请后与您联系。请稍候。",
+          "back": "返回"
+        }
+      },
+      "location": {
+        "list": {
+          "h1": "地点"
+        },
+        "details": {
+          "sections": {
+            "tours": {
+              "name": "游览此地点的旅游"
+            }
+          }
+        }
+      }
+    }
+  }
+}

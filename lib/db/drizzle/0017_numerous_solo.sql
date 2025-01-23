@@ -1,0 +1,1 @@
+DROP INDEX `asset_path_unique`;

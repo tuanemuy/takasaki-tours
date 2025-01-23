@@ -1,0 +1,1 @@
+ALTER TABLE `application` ADD `locale` text DEFAULT 'ja' NOT NULL;

@@ -1,0 +1,1 @@
+ALTER TABLE `toursFiles` DROP COLUMN `temp`;

@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX `tour_slug_unique` ON `tour` (`slug`);

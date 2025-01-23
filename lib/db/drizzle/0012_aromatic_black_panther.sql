@@ -1,0 +1,1 @@
+ALTER TABLE `tour` ADD `temp` text;

@@ -1,0 +1,181 @@
+{
+  "general": {
+    "colon": ":",
+    "more": "View More",
+    "buttons": {
+      "add": "Create",
+      "save": "Save",
+      "edit": "Edit",
+      "submit": "Submit",
+      "cancel": "Cancel"
+    },
+    "messages": {
+      "failedToSend": "Failed to send",
+      "tryAgain": "Please try again",
+      "invalidValue": "Please enter a valid value"
+    },
+    "errors": {
+      "validation-error": "There is a problem with the input value",
+      "parsing-error": "Failed to process the input value",
+      "not-found-error": "Data not found",
+      "database-error": "A database error occurred",
+      "unique-constraint-error": "This value is already in use",
+      "auth-error": "An authentication error occurred",
+      "unauthorized-error": "Unauthorized",
+      "recaptcha-error": "Invalid request",
+      "storage-error": "A storage error occurred",
+      "sharp-error": "An error occurred while processing the image",
+      "image-conversion-error": "An error occurred while converting the image",
+      "mailer-error": "Failed to send email"
+    }
+  },
+  "pages": {
+    "public": {
+      "layout": {
+        "links": [
+          {
+            "name": "Home",
+            "href": "/"
+          },
+          {
+            "name": "Find Tours",
+            "href": "/tour"
+          },
+          {
+            "name": "Privacy Policy",
+            "href": "/privacy-policy"
+          }
+        ],
+        "copyright": "© Yanagawa Village Office"
+      },
+      "index": {
+        "meta": {
+          "title": "Tourist Spots & Tours in Takasaki City, Gunma | TAKASAKI TOURS",
+          "description": "Takasaki City in Gunma Prefecture has long been a transportation hub, attracting many visitors from various regions. On this website, you can find tours that explore the history and culture of the area. Experience the charm of Takasaki City from different perspectives."
+        },
+        "h1": "Tourist Spots & Tours in Takasaki City, Gunma | TAKASAKI TOURS",
+        "title": "Welcome to Takasaki City, Gunma",
+        "overview": "Takasaki City in Gunma Prefecture has long been a transportation hub, attracting many visitors from various regions. On this website, you can find tours that explore the history and culture of the area. Experience the charm of Takasaki City from different perspectives.",
+        "sections": {
+          "tours": {
+            "name": "Find Tours",
+            "more": "All Tours"
+          }
+        }
+      },
+      "privacyPolicy": {
+        "meta": {
+          "title": "Privacy Policy | TAKASAKI TOURS",
+          "description": "Privacy Policy of TAKASAKI TOURS."
+        },
+        "h1": "Privacy Policy"
+      },
+      "tour": {
+        "list": {
+          "meta": {
+            "title": "Find Tours in Takasaki City, Gunma | TAKASAKI TOURS",
+            "description": "Tour list page. Find tours exploring the history and culture of Takasaki City, Gunma Prefecture."
+          },
+          "h1": "Find Tours"
+        },
+        "details": {
+          "sections": {
+            "header": {
+              "headings": {
+                "duration": "Duration",
+                "price": "Price"
+              }
+            },
+            "locations": {
+              "name": "Places to Visit",
+              "more": "View More"
+            },
+            "information": {
+              "name": "Tour Information",
+              "headings": {
+                "price": "Price",
+                "duration": "Duration",
+                "meetingTime": "Meeting Time",
+                "meetingPoint": "Meeting Point",
+                "parking": "Parking",
+                "clothing": "Clothing",
+                "minParticipants": "Minimum Participants",
+                "maxParticipants": "Maximum Participants",
+                "languages": "Available Languages",
+                "ageRestrictions": "Age Restrictions"
+              },
+              "units": {
+                "participants": "people"
+              }
+            },
+            "services": {
+              "name": "What's Included"
+            },
+            "schedules": {
+              "name": "Schedule"
+            },
+            "cancel": {
+              "name": "Cancellation Policy"
+            },
+            "application": {
+              "name": "Application",
+              "note": "* This form does not confirm your reservation. Our staff will contact you after reviewing your application.",
+              "requiredInformation": "Required Information",
+              "inputs": {
+                "date": {
+                  "name": "Preferred Date"
+                },
+                "participants": {
+                  "name": "Number of Participants"
+                },
+                "representative": {
+                  "name": "Representative Name"
+                },
+                "participantsDetails": {
+                  "name": "Participants",
+                  "placeholder": "Example:\nTaylor Brooks (Age: 28, Allergies: wheat, Alcohol: yes)\n柳川 秀雄 (Age: 35, Allergies: wheat, Alcohol: yes)",
+                  "note": "Please enter the required information for all participants."
+                },
+                "email": {
+                  "name": "Email Address"
+                },
+                "tel": {
+                  "name": "Phone Number"
+                },
+                "remarks": {
+                  "name": "Other Notes"
+                }
+              },
+              "submit": "Apply",
+              "confirmation": {
+                "title": "Would you like to apply for this tour?",
+                "description": "This application form does not confirm your reservation.<br/>Our staff will contact you after reviewing your application.",
+                "confirm": "Apply"
+              }
+            },
+            "contact": {
+              "name": "Contact"
+            }
+          }
+        },
+        "thanks": {
+          "title": "Thank You for Your Application",
+          "message": "We have received your tour application.<br/>Our staff will contact you after reviewing your application. Please wait for a while.",
+          "back": "Back"
+        }
+      },
+      "location": {
+        "list": {
+          "h1": "Locations"
+        },
+        "details": {
+          "sections": {
+            "tours": {
+              "name": "Tours Visiting This Location"
+            }
+          }
+        }
+      }
+    }
+  }
+}

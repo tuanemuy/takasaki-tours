@@ -1,0 +1,181 @@
+{
+  "general": {
+    "colon": "：",
+    "more": "了解更多",
+    "buttons": {
+      "add": "建立",
+      "save": "儲存",
+      "edit": "編輯",
+      "submit": "提交",
+      "cancel": "取消"
+    },
+    "messages": {
+      "failedToSend": "發送失敗",
+      "tryAgain": "請重試",
+      "invalidValue": "請輸入有效值"
+    },
+    "errors": {
+      "validation-error": "輸入值有誤",
+      "parsing-error": "無法處理輸入值",
+      "not-found-error": "未找到數據",
+      "database-error": "數據庫出錯",
+      "unique-constraint-error": "該值已被使用",
+      "auth-error": "認證出錯",
+      "unauthorized-error": "無權限",
+      "recaptcha-error": "無效請求",
+      "storage-error": "儲存出錯",
+      "sharp-error": "圖片處理出錯",
+      "image-conversion-error": "圖片轉換出錯",
+      "mailer-error": "郵件發送失敗"
+    }
+  },
+  "pages": {
+    "public": {
+      "layout": {
+        "links": [
+          {
+            "name": "首頁",
+            "href": "/"
+          },
+          {
+            "name": "尋找旅遊",
+            "href": "/tour"
+          },
+          {
+            "name": "隱私政策",
+            "href": "/privacy-policy"
+          }
+        ],
+        "copyright": "© 柳川村役場"
+      },
+      "index": {
+        "meta": {
+          "title": "群馬県高崎市觀光景點・旅遊路線 | TAKASAKI TOURS",
+          "description": "群馬県高崎市自古以來就是交通要地，吸引了來自各地的眾多遊客。在本網站上，您可以找到探索這裡歷史和文化的旅遊路線。請從不同角度欣賞魅力四射的高崎市。"
+        },
+        "h1": "群馬県高崎市觀光景點・旅遊路線 | TAKASAKI TOURS",
+        "title": "歡迎來到群馬県高崎市",
+        "overview": "群馬県高崎市自古以來就是交通要地，吸引了來自各地的眾多遊客。在本網站上，您可以找到探索這裡歷史和文化的旅遊路線。請從不同角度欣賞魅力四射的高崎市。",
+        "sections": {
+          "tours": {
+            "name": "尋找旅遊",
+            "more": "所有旅遊"
+          }
+        }
+      },
+      "privacyPolicy": {
+        "meta": {
+          "title": "隱私政策 | TAKASAKI TOURS",
+          "description": "TAKASAKI TOURS的隱私政策。"
+        },
+        "h1": "隱私政策"
+      },
+      "tour": {
+        "list": {
+          "meta": {
+            "title": "尋找群馬縣高崎市的旅遊路線 | TAKASAKI TOURS",
+            "description": "旅遊路線列表頁面。尋找探索群馬縣高崎市歷史和文化的旅遊路線。"
+          },
+          "h1": "尋找旅遊"
+        },
+        "details": {
+          "sections": {
+            "header": {
+              "headings": {
+                "duration": "所需時間",
+                "price": "價格"
+              }
+            },
+            "locations": {
+              "name": "遊覽地點",
+              "more": "了解更多"
+            },
+            "information": {
+              "name": "旅遊資訊",
+              "headings": {
+                "price": "價格",
+                "duration": "所需時間",
+                "meetingTime": "集合時間",
+                "meetingPoint": "集合地點",
+                "parking": "停車場",
+                "clothing": "著裝",
+                "minParticipants": "最少人數",
+                "maxParticipants": "最大人數",
+                "languages": "可用語言",
+                "ageRestrictions": "年齡限制"
+              },
+              "units": {
+                "participants": "人"
+              }
+            },
+            "services": {
+              "name": "費用包含"
+            },
+            "schedules": {
+              "name": "行程安排"
+            },
+            "cancel": {
+              "name": "取消政策"
+            },
+            "application": {
+              "name": "申請",
+              "note": "* 此表格不確認您的預訂。我們的工作人員將在審核您的申請後與您聯繫。",
+              "requiredInformation": "必填資訊",
+              "inputs": {
+                "date": {
+                  "name": "首選日期"
+                },
+                "participants": {
+                  "name": "參加人數"
+                },
+                "representative": {
+                  "name": "代表姓名"
+                },
+                "participantsDetails": {
+                  "name": "參加者",
+                  "placeholder": "示例：\nTaylor Brooks（年齡：28歲，過敏：小麥，飲酒：是）\n柳川 秀雄（年齡：35歲，過敏：小麥，飲酒：是）",
+                  "note": "請輸入所有參加者的必填資訊。"
+                },
+                "email": {
+                  "name": "電子郵箱"
+                },
+                "tel": {
+                  "name": "電話號碼"
+                },
+                "remarks": {
+                  "name": "其他備註"
+                }
+              },
+              "submit": "申請",
+              "confirmation": {
+                "title": "您確定要申請此旅遊嗎？",
+                "description": "此申請表不確認您的預訂。<br/>我們的工作人員將在審核您的申請後與您聯繫。",
+                "confirm": "申請"
+              }
+            },
+            "contact": {
+              "name": "聯繫我們"
+            }
+          }
+        },
+        "thanks": {
+          "title": "感謝您的申請",
+          "message": "我們已收到您的旅遊申請。<br/>我們的工作人員將在審核您的申請後與您聯繫。請稍候。",
+          "back": "返回"
+        }
+      },
+      "location": {
+        "list": {
+          "h1": "地點"
+        },
+        "details": {
+          "sections": {
+            "tours": {
+              "name": "遊覽此地點的旅遊"
+            }
+          }
+        }
+      }
+    }
+  }
+}

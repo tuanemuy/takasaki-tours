@@ -1,0 +1,181 @@
+{
+  "general": {
+    "colon": "：",
+    "more": "詳しく見る",
+    "buttons": {
+      "add": "作成する",
+      "save": "保存する",
+      "edit": "編集する",
+      "submit": "送信する",
+      "cancel": "キャンセル"
+    },
+    "messages": {
+      "failedToSend": "正しく送信できませんでした",
+      "tryAgain": "もう一度お試しください",
+      "invalidValue": "正しく入力してください"
+    },
+    "errors": {
+      "validation-error": "入力値に問題があります",
+      "parsing-error": "入力値を正しく処理できませんでした",
+      "not-found-error": "データが見つかりません",
+      "database-error": "データベースに問題が発生しました",
+      "unique-constraint-error": "値が既に使われています",
+      "auth-error": "認証処理に問題が発生しました",
+      "unauthorized-error": "権限がありません",
+      "recaptcha-error": "不正なリクエストです",
+      "storage-error": "ストレージに問題が発生しました",
+      "sharp-error": "画像の処理に問題が発生しました",
+      "image-conversion-error": "画像の変換に問題が発生しました",
+      "mailer-error": "メールを送信できませんでした"
+    }
+  },
+  "pages": {
+    "public": {
+      "layout": {
+        "links": [
+          {
+            "name": "ホーム",
+            "href": "/"
+          },
+          {
+            "name": "ツアーを探す",
+            "href": "/tour"
+          },
+          {
+            "name": "個人情報保護方針",
+            "href": "/privacy-policy"
+          }
+        ],
+        "copyright": "© ヤナガワ村役場"
+      },
+      "index": {
+        "meta": {
+          "title": "群馬県高崎市の観光地・ツアー | TAKASAKI TOURS",
+          "description": "群馬県高崎市は古くから交通の要衝であり、各地から多くの人が集まりました。このWebサイトでは、そこで生まれた歴史や文化を巡るツアーを探すことができます。魅力あふれる高崎市を、ぜひ様々な角度からお楽しみください。"
+        },
+        "h1": "群馬県高崎市の観光地・ツアー | TAKASAKI TOURS",
+        "title": "ようこそ、群馬県高崎市へ",
+        "overview": "群馬県高崎市は古くから交通の要衝であり、各地から多くの人が集まりました。このWebサイトでは、そこで生まれた歴史や文化を巡るツアーを探すことができます。魅力あふれる高崎市を、ぜひ様々な角度からお楽しみください。",
+        "sections": {
+          "tours": {
+            "name": "ツアーを探す",
+            "more": "すべてのツアー"
+          }
+        }
+      },
+      "privacyPolicy": {
+        "meta": {
+          "title": "個人情報保護方針 | TAKASAKI TOURS",
+          "description": "TAKASAKI TOURSの個人情報保護方針です。"
+        },
+        "h1": "個人情報保護方針"
+      },
+      "tour": {
+        "list": {
+          "meta": {
+            "title": "群馬県高崎市のツアーを探す | TAKASAKI TOURS",
+            "description": "ツアー一覧ページです。群馬県高崎市の歴史や文化を巡るツアーを探しましょう。"
+          },
+          "h1": "ツアーを探す"
+        },
+        "details": {
+          "sections": {
+            "header": {
+              "headings": {
+                "duration": "所要時間",
+                "price": "料金"
+              }
+            },
+            "locations": {
+              "name": "訪れる場所",
+              "more": "詳しく見る"
+            },
+            "information": {
+              "name": "ツアー情報",
+              "headings": {
+                "price": "料金",
+                "duration": "所要時間",
+                "meetingTime": "集合時間",
+                "meetingPoint": "集合場所",
+                "parking": "駐車場",
+                "clothing": "服装",
+                "minParticipants": "最少人数",
+                "maxParticipants": "最大人数",
+                "languages": "対応言語",
+                "ageRestrictions": "年齢制限"
+              },
+              "units": {
+                "participants": "人"
+              }
+            },
+            "services": {
+              "name": "料金に含まれるもの"
+            },
+            "schedules": {
+              "name": "スケジュール"
+            },
+            "cancel": {
+              "name": "キャンセルについて"
+            },
+            "application": {
+              "name": "お申し込み",
+              "note": "※ このフォームは予約を確定するものではありません。内容を確認して担当者がご連絡いたします",
+              "requiredInformation": "入力必須項目",
+              "inputs": {
+                "date": {
+                  "name": "ご希望日"
+                },
+                "participants": {
+                  "name": "人数"
+                },
+                "representative": {
+                  "name": "代表者氏名"
+                },
+                "participantsDetails": {
+                  "name": "参加者",
+                  "placeholder": "例）\nTaylor Brooks（Age: 28, Allergies: wheat, Alcohol: yes）\n柳川 秀雄（35歳・アレルギー：小麦・飲酒あり）",
+                  "note": "参加される方の「入力必須項目」を全員分ご入力ください。"
+                },
+                "email": {
+                  "name": "メールアドレス"
+                },
+                "tel": {
+                  "name": "電話番号"
+                },
+                "remarks": {
+                  "name": "その他"
+                }
+              },
+              "submit": "申し込む",
+              "confirmation": {
+                "title": "ツアーに申し込んでよろしいですか？",
+                "description": "このお申し込みフォームは予約を確定するものではありません。<br/>内容を確認して担当者がご連絡いたします。",
+                "confirm": "申し込む"
+              }
+            },
+            "contact": {
+              "name": "お問い合わせ"
+            }
+          }
+        },
+        "thanks": {
+          "title": "お申し込みありがとうございました",
+          "message": "ツアーへのお申し込みを承りました。<br/>内容を確認して担当者がご連絡いたしますので、今しばらくお待ちください。",
+          "back": "戻る"
+        }
+      },
+      "location": {
+        "list": {
+          "h1": "場所"
+        },
+        "details": {
+          "sections": {
+            "tours": {
+              "name": "この場所を訪れるツアー"
+            }
+          }
+        }
+      }
+    }
+  }
+}

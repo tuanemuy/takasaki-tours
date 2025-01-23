@@ -1,0 +1,1 @@
+ALTER TABLE `tourContent` ADD `parking` text;
