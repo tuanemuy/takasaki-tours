@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "panda codegen && next build",
     "start": "next start",
     "lint": "next lint",
-    "codegen": "panda codegen",
     "migrate:dev": "drizzle-kit generate && drizzle-kit migrate",
     "migrate:prod": "drizzle-kit migrate",
     "studio": "drizzle-kit studio"
