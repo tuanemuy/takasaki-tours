@@ -1,0 +1,61 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - '--no-cache'
+      - '-t'
+      - >-
+        $_AR_HOSTNAME/$PROJECT_ID/cloud-run-source-deploy/$REPO_NAME/$_SERVICE_NAME:$COMMIT_SHA
+      - .
+      - '-f'
+      - Dockerfile
+      - '--build-arg'
+      - >-
+        DATABASE_URL=$_DATABASE_URL
+      - '--build-arg'
+      - >-
+        DATABASE_AUTH_TOKEN=$$DATABASE_AUTH_TOKEN
+    secretEnv: ["DATABASE_AUTH_TOKEN"]
+    id: Build
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - push
+      - >-
+        $_AR_HOSTNAME/$PROJECT_ID/cloud-run-source-deploy/$REPO_NAME/$_SERVICE_NAME:$COMMIT_SHA
+    id: Push
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk:slim'
+    args:
+      - run
+      - services
+      - update
+      - $_SERVICE_NAME
+      - '--platform=managed'
+      - >-
+        --image=$_AR_HOSTNAME/$PROJECT_ID/cloud-run-source-deploy/$REPO_NAME/$_SERVICE_NAME:$COMMIT_SHA
+      - >-
+        --labels=managed-by=gcp-cloud-build-deploy-cloud-run,commit-sha=$COMMIT_SHA,gcb-build-id=$BUILD_ID,gcb-trigger-id=$_TRIGGER_ID
+      - '--region=$_DEPLOY_REGION'
+      - '--quiet'
+    id: Deploy
+    entrypoint: gcloud
+images:
+  - >-
+    $_AR_HOSTNAME/$PROJECT_ID/cloud-run-source-deploy/$REPO_NAME/$_SERVICE_NAME:$COMMIT_SHA
+options:
+  substitutionOption: ALLOW_LOOSE
+  logging: CLOUD_LOGGING_ONLY
+substitutions:
+  _SERVICE_NAME: takasaki-tours
+  _DEPLOY_REGION: asia-northeast1
+  _AR_HOSTNAME: asia-northeast1-docker.pkg.dev
+  _TRIGGER_ID: 2c7ef655-9dd8-497a-81ab-ab0f3d38cab2
+  _PLATFORM: managed
+availableSecrets:
+  secretManager:
+    - versionName: projects/270398651827/secrets/database_auth_token/versions/latest
+      env: "DATABASE_AUTH_TOKEN"
+tags:
+  - gcp-cloud-build-deploy-cloud-run
+  - gcp-cloud-build-deploy-cloud-run-managed
+  - takasaki-tours
+

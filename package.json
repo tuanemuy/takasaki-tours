@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "migrate:dev": "drizzle-kit generate && drizzle-kit migrate",
-    "migrate:prod": "drizzle-kit migrate",
+    "migrate:deploy": "drizzle-kit migrate",
     "studio": "drizzle-kit studio"
   },
   "dependencies": {
