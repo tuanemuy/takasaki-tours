@@ -1,4 +1,4 @@
-import { drizzle } from "drizzle-orm/libsql";
+import { drizzle } from "drizzle-orm/libsql/web";
 import * as schema from "./schema";
 
 export const db = process.env.DATABASE_AUTH_TOKEN
