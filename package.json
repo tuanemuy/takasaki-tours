@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prepare": "panda codegen",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "codegen": "panda codegen",
     "migrate:dev": "drizzle-kit generate && drizzle-kit migrate",
     "migrate:prod": "drizzle-kit migrate",
     "studio": "drizzle-kit studio"
