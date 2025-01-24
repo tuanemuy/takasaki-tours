@@ -1,11 +1,5 @@
 FROM node:20-alpine AS base
 
-ARG DATABASE_URL
-ARG DATABASE_AUTH_TOKEN
-
-ENV DATABASE_URL = $DATABASE_URL
-ENV DATABASE_AUTH_TOKEN = $DATABASE_AUTH_TOKEN
-
 # Install dependencies only when needed
 FROM base AS deps
 # Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
@@ -23,6 +17,12 @@ RUN \
 FROM base AS builder
 WORKDIR /app
 
+ARG DATABASE_URL
+ARG DATABASE_AUTH_TOKEN
+
+ENV DATABASE_URL = $DATABASE_URL
+ENV DATABASE_AUTH_TOKEN = $DATABASE_AUTH_TOKEN
+
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
@@ -30,8 +30,6 @@ COPY . .
 # Learn more here: https://nextjs.org/telemetry
 # Uncomment the following line in case you want to disable telemetry during the build.
 # ENV NEXT_TELEMETRY_DISABLED 1
-
-RUN echo $DATABASE_AUTH_TOKEN
 
 RUN \
   if [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm migrate:deploy && pnpm build; \
