@@ -1,7 +1,7 @@
 namespace NodeJS {
   interface ProcessEnv extends NodeJS.ProcessEnv {
     DATABASE_URL: string;
-    DATABASE_AUTH_TOKEN?: string;
+    DATABASE_AUTH_TOKEN: string;
     AUTH_SECRET: string;
     EMAIL_FROM: string;
     NOTIFY_TO: string;
