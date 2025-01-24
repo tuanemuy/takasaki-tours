@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { baseUrl } from "@/lib/config";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -13,6 +14,6 @@ export default function robots(): MetadataRoute.Robots {
         "/zh-Hant/",
       ],
     },
-    sitemap: [`${process.env.NEXT_PUBLIC_BASE_URL}/sitemapindex/sitemap.xml`],
+    sitemap: [`${baseUrl}/sitemapindex/sitemap.xml`],
   };
 }

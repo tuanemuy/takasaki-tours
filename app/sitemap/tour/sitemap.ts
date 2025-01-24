@@ -2,7 +2,7 @@ export const revalidate = 3600;
 export const dynamicParams = true;
 
 import type { MetadataRoute } from "next";
-import { sitemapPerPage } from "@/lib/config";
+import { baseUrl, sitemapPerPage } from "@/lib/config";
 import { defaultLocale } from "@/lib/i18n";
 import { Order } from "@/lib/db";
 import { getErrorMessage } from "@/lib/action/error";
@@ -34,12 +34,12 @@ export default async function sitemap({
 
   return result.map((tour) => {
     return {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/${defaultLocale}/tour/${tour.slug}`,
+      url: `${baseUrl}/${defaultLocale}/tour/${tour.slug}`,
       lastModified: tour.updatedAt,
       alternates: {
         languages: {
-          en: `${process.env.NEXT_PUBLIC_BASE_URL}/en/tour/${tour.slug}`,
-          ja: `${process.env.NEXT_PUBLIC_BASE_URL}/ja/tour/${tour.slug}`,
+          en: `${baseUrl}/en/tour/${tour.slug}`,
+          ja: `${baseUrl}/ja/tour/${tour.slug}`,
         },
       },
     };

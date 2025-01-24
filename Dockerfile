@@ -1,13 +1,5 @@
 FROM node:20-alpine AS base
 
-ARG BASE_URL
-ARG DATABASE_URL
-ARG DATABASE_AUTH_TOKEN
-
-ENV NEXT_PUBLIC_BASE_URL $BASE_URL
-ENV DATABASE_URL $DATABASE_URL
-ENV DATABASE_AUTH_TOKEN $DATABASE_AUTH_TOKEN
-
 # Install dependencies only when needed
 FROM base AS deps
 # Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
@@ -34,7 +26,7 @@ COPY . .
 # ENV NEXT_TELEMETRY_DISABLED 1
 
 RUN \
-  if [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm run migrate:prod && pnpm build; \
+  if [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm build; \
   else echo "Lockfile not found." && exit 1; \
   fi
 

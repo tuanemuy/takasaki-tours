@@ -1,31 +1,32 @@
 import type { MetadataRoute } from "next";
+import { baseUrl } from "@/lib/config";
 import { defaultLocale } from "@/lib/i18n";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/${defaultLocale}`,
+      url: `${baseUrl}/${defaultLocale}`,
       lastModified: new Date(),
       changeFrequency: "yearly",
       alternates: {
         languages: {
-          en: `${process.env.NEXT_PUBLIC_BASE_URL}/en`,
-          ja: `${process.env.NEXT_PUBLIC_BASE_URL}/ja`,
-          "zh-Hans": `${process.env.NEXT_PUBLIC_BASE_URL}/zh-Hans`,
-          "zh-Hant": `${process.env.NEXT_PUBLIC_BASE_URL}/zh-Hant`,
+          en: `${baseUrl}/en`,
+          ja: `${baseUrl}/ja`,
+          "zh-Hans": `${baseUrl}/zh-Hans`,
+          "zh-Hant": `${baseUrl}/zh-Hant`,
         },
       },
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/${defaultLocale}/privacy-policy`,
+      url: `${baseUrl}/${defaultLocale}/privacy-policy`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       alternates: {
         languages: {
-          en: `${process.env.NEXT_PUBLIC_BASE_URL}/en/privacy-policy`,
-          ja: `${process.env.NEXT_PUBLIC_BASE_URL}/ja/privacy-policy`,
-          "zh-Hans": `${process.env.NEXT_PUBLIC_BASE_URL}/zh-Hans/privacy-policy`,
-          "zh-Hant": `${process.env.NEXT_PUBLIC_BASE_URL}/zh-Hant/privacy-policy`,
+          en: `${baseUrl}/en/privacy-policy`,
+          ja: `${baseUrl}/ja/privacy-policy`,
+          "zh-Hans": `${baseUrl}/zh-Hans/privacy-policy`,
+          "zh-Hant": `${baseUrl}/zh-Hant/privacy-policy`,
         },
       },
     },

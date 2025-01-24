@@ -1,8 +1,7 @@
 namespace NodeJS {
   interface ProcessEnv extends NodeJS.ProcessEnv {
-    NEXT_PUBLIC_BASE_URL: string;
     DATABASE_URL: string;
-    TURSO_AUTH_TOKEN?: string;
+    DATABASE_AUTH_TOKEN?: string;
     AUTH_SECRET: string;
     EMAIL_FROM: string;
     NOTIFY_TO: string;
@@ -16,7 +15,6 @@ namespace NodeJS {
     AUTH_SENDGRID_KEY: string;
     GCS_BUCKET_NAME: string;
     GOOGLE_APPLICATION_CREDENTIALS: string;
-    NEXT_PUBLIC_GOOGLE_RECAPTCHA_SITE_KEY: string;
     GOOGLE_RECAPTCHA_SECRET_KEY: string;
   }
 }

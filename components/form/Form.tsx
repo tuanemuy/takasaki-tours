@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useActionState, useRef, useState, useEffect } from "react";
+import { googleRecaptchaSiteKey } from "@/lib/config";
 import { getSrc } from "@/lib/core/file";
 import type { NewSchedule } from "@/lib/core/schedule";
 import type {
@@ -108,7 +109,7 @@ export function Form<TData, TResult>({
     if (withRecaptcha && window.grecaptcha) {
       window.grecaptcha.ready(() => {
         window.grecaptcha
-          .execute(process.env.NEXT_PUBLIC_GOOGLE_RECAPTCHA_SITE_KEY, {
+          .execute(googleRecaptchaSiteKey, {
             action: "submit",
           })
           .then((token) => {

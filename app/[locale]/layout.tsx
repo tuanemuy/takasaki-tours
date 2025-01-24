@@ -4,6 +4,7 @@ import { getDictionary } from "@/lib/i18n/dictionary";
 import { Suspense } from "react";
 import NextLink from "next/link";
 import Script from "next/script";
+import { googleRecaptchaSiteKey } from "@/lib/config";
 import { Link } from "@/components/ui/link";
 import { DictionaryProvider } from "@/lib/i18n/context";
 import { Container, Box, HStack, styled } from "@/styled-system/jsx";
@@ -28,7 +29,7 @@ export default async function Layout({ params, pre, h1, children }: Props) {
   return (
     <>
       <Script
-        src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_GOOGLE_RECAPTCHA_SITE_KEY}`}
+        src={`https://www.google.com/recaptcha/api.js?render=${googleRecaptchaSiteKey}`}
       />
 
       <DictionaryProvider dictionary={_dictionary.general}>

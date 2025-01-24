@@ -2,7 +2,7 @@ export const revalidate = 3600;
 export const dynamicParams = true;
 
 import type { MetadataRoute } from "next";
-import { sitemapPerPage } from "@/lib/config";
+import { baseUrl, sitemapPerPage } from "@/lib/config";
 import { defaultLocale } from "@/lib/i18n";
 import { Order } from "@/lib/db";
 import { getErrorMessage } from "@/lib/action/error";
@@ -36,12 +36,12 @@ export default async function sitemap({
 
   return result.map((location) => {
     return {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/${defaultLocale}/location/${location.id}`,
+      url: `${baseUrl}/${defaultLocale}/location/${location.id}`,
       lastModified: location.updatedAt,
       alternates: {
         languages: {
-          en: `${process.env.NEXT_PUBLIC_BASE_URL}/en/location/${location.id}`,
-          ja: `${process.env.NEXT_PUBLIC_BASE_URL}/ja/location/${location.id}`,
+          en: `${baseUrl}/en/location/${location.id}`,
+          ja: `${baseUrl}/ja/location/${location.id}`,
         },
       },
     };
