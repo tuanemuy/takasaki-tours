@@ -8,7 +8,6 @@ import tomato from "@park-ui/panda-preset/colors/tomato";
 export default defineConfig({
   preflight: true,
   presets: [
-    "@pandacss/preset-base",
     createPreset({
       accentColor: amber,
       grayColor: sand,
