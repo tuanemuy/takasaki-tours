@@ -1,20 +1,18 @@
 steps:
   - name: gcr.io/cloud-builders/docker
-    args:
-      - build
-      - '--no-cache'
-      - '-t'
-      - >-
-        $_AR_HOSTNAME/$PROJECT_ID/cloud-run-source-deploy/$REPO_NAME/$_SERVICE_NAME:$COMMIT_SHA
-      - .
-      - '-f'
-      - Dockerfile
-      - '--build-arg'
-      - >-
-        DATABASE_URL=$_DATABASE_URL
-      - '--build-arg'
-      - >-
-        DATABASE_AUTH_TOKEN=$$DATABASE_AUTH_TOKEN
+    args: [
+      'build',
+      '--no-cache',
+      '-t',
+      '$_AR_HOSTNAME/$PROJECT_ID/cloud-run-source-deploy/$REPO_NAME/$_SERVICE_NAME:$COMMIT_SHA',
+      '.',
+      '-f',
+      'Dockerfile',
+      '--build-arg',
+      'DATABASE_URL=${_DATABASE_URL}',
+      '--build-arg',
+      'DATABASE_AUTH_TOKEN=$$DATABASE_AUTH_TOKEN'
+    ]
     secretEnv: ["DATABASE_AUTH_TOKEN"]
     id: Build
   - name: gcr.io/cloud-builders/docker
