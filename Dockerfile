@@ -31,6 +31,8 @@ COPY . .
 # Uncomment the following line in case you want to disable telemetry during the build.
 # ENV NEXT_TELEMETRY_DISABLED 1
 
+RUN echo $DATABASE_AUTH_TOKEN
+
 RUN \
   if [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm migrate:deploy && pnpm build; \
   else echo "Lockfile not found." && exit 1; \
