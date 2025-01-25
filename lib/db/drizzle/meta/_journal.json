@@ -176,6 +176,13 @@
       "when": 1737640881734,
       "tag": "0024_steady_young_avengers",
       "breakpoints": true
+    },
+    {
+      "idx": 25,
+      "version": "6",
+      "when": 1737845061491,
+      "tag": "0025_wonderful_shockwave",
+      "breakpoints": true
     }
   ]
 }

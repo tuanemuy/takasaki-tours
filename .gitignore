@@ -47,5 +47,8 @@ styled-system-studio
 ## SQLite
 /data
 
+## log
+/logs
+
 ## Google Cloud
 gserviceaccount.json
