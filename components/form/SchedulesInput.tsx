@@ -42,7 +42,6 @@ export function SchedulesInput({ name, defaultValues, readOnly }: Props) {
                 onClick={() => {
                   const newValues = [...values];
                   newValues.splice(index, 1);
-                  console.log(newValues);
                   setValues(newValues);
                 }}
                 variant="subtle"
