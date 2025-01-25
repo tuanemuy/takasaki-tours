@@ -16,6 +16,7 @@ export class Logger {
     ];
 
     if (process.env.NEXT_RUNTIME !== "edge") {
+      /*
       transports.push(
         new DailyRotateFile({
           level: "info",
@@ -35,6 +36,7 @@ export class Logger {
           maxFiles: "7d",
         }),
       );
+      */
     }
 
     this.logger = winston.createLogger({
