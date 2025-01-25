@@ -249,7 +249,7 @@ export const schedules = sqliteTable(
       .references(() => users.id, { onDelete: "cascade" }),
     tourContentId: text()
       .notNull()
-      .references(() => tourContents.id),
+      .references(() => tourContents.id, { onDelete: "cascade" }),
     order: integer().notNull(),
     kind: text().$type<ScheduleKind>().default("location").notNull(),
     heading: text().notNull(),

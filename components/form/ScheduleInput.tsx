@@ -187,7 +187,7 @@ export function ScheduleInput({
                   </Drawer.CloseTrigger>
                   {!readOnly && (
                     <Button type="button" onClick={save}>
-                      {defaultValue ? "編集" : "追加"}
+                      {defaultValue ? "保存" : "追加"}
                     </Button>
                   )}
                 </Drawer.Footer>

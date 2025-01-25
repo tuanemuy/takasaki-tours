@@ -19,7 +19,7 @@ export function SchedulesInput({ name, defaultValues, readOnly }: Props) {
   return (
     <Stack gap="4">
       {values.map((value, index) => {
-        const key = `${value}${index}`;
+        const key = `${value.heading}${index}`;
         return (
           <HStack key={key} gap="2" w="full">
             <Box flexGrow="1">
@@ -42,6 +42,7 @@ export function SchedulesInput({ name, defaultValues, readOnly }: Props) {
                 onClick={() => {
                   const newValues = [...values];
                   newValues.splice(index, 1);
+                  console.log(newValues);
                   setValues(newValues);
                 }}
                 variant="subtle"
