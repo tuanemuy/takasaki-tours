@@ -5,7 +5,8 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/": [
       "./node_modules/@libsql/**/*",
-      "./node_modules/.pnpm/@libsql+client@0.14.0/**/*",
+      "./node_modules/.pnpm/@libsql+client@*/**/*",
+      "./node_modules/.pnpm/@libsql+core@*/**/*",
     ],
   },
   experimental: {
